@@ -27,7 +27,8 @@ url: "ejvillareal-tip.github.io" # the base hostname & protocol for your site, e
 github_username:  ejvillareal-tip
 
 # Build settings
-theme: minima
+# I remove minima them as it now a regular theme
+#theme: minima
 plugins:
   - jekyll-feed
 
