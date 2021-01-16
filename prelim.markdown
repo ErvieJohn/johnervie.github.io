@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: prelim
 title: Prelim
 source: ./prelim
 permalink: /prelim/
