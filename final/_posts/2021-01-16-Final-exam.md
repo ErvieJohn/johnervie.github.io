@@ -46,21 +46,21 @@ sysad2-12021
 │       │   ├── index.html
 │       │   ├── index_centos.html
 │       │   ├── index_debian.html
-│       │   └── index_opensuse.html
+│       │   ├── index_docker.html
+│       │   ├── index_opensuse.html
+│       │   └── logstash.conf
 │       ├── inventory
 │       └── roles
 │           ├── apache2_debian
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
-│           │   ├── files
 │           │   ├── handlers
 │           │   │   └── main.yml
 │           │   ├── meta
 │           │   │   └── main.yml
 │           │   ├── tasks
 │           │   │   └── main.yml
-│           │   ├── templates
 │           │   ├── tests
 │           │   │   ├── inventory
 │           │   │   └── test.yml
@@ -70,20 +70,48 @@ sysad2-12021
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
-│           │   ├── files
 │           │   ├── handlers
 │           │   │   └── main.yml
 │           │   ├── meta
 │           │   │   └── main.yml
 │           │   ├── tasks
 │           │   │   └── main.yml
-│           │   ├── templates
 │           │   ├── tests
 │           │   │   ├── inventory
 │           │   │   └── test.yml
 │           │   └── vars
 │           │       └── main.yml
 │           ├── git_clone
+│           │   ├── README.md
+│           │   ├── defaults
+│           │   │   └── main.yml
+│           │   ├── handlers
+│           │   │   └── main.yml
+│           │   ├── meta
+│           │   │   └── main.yml
+│           │   ├── tasks
+│           │   │   └── main.yml
+│           │   ├── tests
+│           │   │   ├── inventory
+│           │   │   └── test.yml
+│           │   └── vars
+│           │       └── main.yml
+│           ├── httpd_centos
+│           │   ├── README.md
+│           │   ├── defaults
+│           │   │   └── main.yml
+│           │   ├── handlers
+│           │   │   └── main.yml
+│           │   ├── meta
+│           │   │   └── main.yml
+│           │   ├── tasks
+│           │   │   └── main.yml
+│           │   ├── tests
+│           │   │   ├── inventory
+│           │   │   └── test.yml
+│           │   └── vars
+│           │       └── main.yml
+│           ├── install-ElasticStack-docker
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
@@ -100,7 +128,58 @@ sysad2-12021
 │           │   │   └── test.yml
 │           │   └── vars
 │           │       └── main.yml
-│           ├── httpd_centos
+│           ├── install-docker-centos
+│           │   ├── README.md
+│           │   ├── defaults
+│           │   │   └── main.yml
+│           │   ├── files
+│           │   ├── handlers
+│           │   │   └── main.yml
+│           │   ├── meta
+│           │   │   └── main.yml
+│           │   ├── tasks
+│           │   │   └── main.yml
+│           │   ├── templates
+│           │   ├── tests
+│           │   │   ├── inventory
+│           │   │   └── test.yml
+│           │   └── vars
+│           │       └── main.yml
+│           ├── install-docker-debian
+│           │   ├── README.md
+│           │   ├── defaults
+│           │   │   └── main.yml
+│           │   ├── files
+│           │   ├── handlers
+│           │   │   └── main.yml
+│           │   ├── meta
+│           │   │   └── main.yml
+│           │   ├── tasks
+│           │   │   └── main.yml
+│           │   ├── templates
+│           │   ├── tests
+│           │   │   ├── inventory
+│           │   │   └── test.yml
+│           │   └── vars
+│           │       └── main.yml
+│           ├── install-docker-opensuse
+│           │   ├── README.md
+│           │   ├── defaults
+│           │   │   └── main.yml
+│           │   ├── files
+│           │   ├── handlers
+│           │   │   └── main.yml
+│           │   ├── meta
+│           │   │   └── main.yml
+│           │   ├── tasks
+│           │   │   └── main.yml
+│           │   ├── templates
+│           │   ├── tests
+│           │   │   ├── inventory
+│           │   │   └── test.yml
+│           │   └── vars
+│           │       └── main.yml
+│           ├── install-httpd-docker
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
@@ -121,14 +200,12 @@ sysad2-12021
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
-│           │   ├── files
 │           │   ├── handlers
 │           │   │   └── main.yml
 │           │   ├── meta
 │           │   │   └── main.yml
 │           │   ├── tasks
 │           │   │   └── main.yml
-│           │   ├── templates
 │           │   ├── tests
 │           │   │   ├── inventory
 │           │   │   └── test.yml
@@ -138,14 +215,12 @@ sysad2-12021
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
-│           │   ├── files
 │           │   ├── handlers
 │           │   │   └── main.yml
 │           │   ├── meta
 │           │   │   └── main.yml
 │           │   ├── tasks
 │           │   │   └── main.yml
-│           │   ├── templates
 │           │   ├── tests
 │           │   │   ├── inventory
 │           │   │   └── test.yml
@@ -155,14 +230,12 @@ sysad2-12021
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
-│           │   ├── files
 │           │   ├── handlers
 │           │   │   └── main.yml
 │           │   ├── meta
 │           │   │   └── main.yml
 │           │   ├── tasks
 │           │   │   └── main.yml
-│           │   ├── templates
 │           │   ├── tests
 │           │   │   ├── inventory
 │           │   │   └── test.yml
@@ -172,14 +245,12 @@ sysad2-12021
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
-│           │   ├── files
 │           │   ├── handlers
 │           │   │   └── main.yml
 │           │   ├── meta
 │           │   │   └── main.yml
 │           │   ├── tasks
 │           │   │   └── main.yml
-│           │   ├── templates
 │           │   ├── tests
 │           │   │   ├── inventory
 │           │   │   └── test.yml
@@ -189,14 +260,12 @@ sysad2-12021
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
-│           │   ├── files
 │           │   ├── handlers
 │           │   │   └── main.yml
 │           │   ├── meta
 │           │   │   └── main.yml
 │           │   ├── tasks
 │           │   │   └── main.yml
-│           │   ├── templates
 │           │   ├── tests
 │           │   │   ├── inventory
 │           │   │   └── test.yml
@@ -206,14 +275,12 @@ sysad2-12021
 │           │   ├── README.md
 │           │   ├── defaults
 │           │   │   └── main.yml
-│           │   ├── files
 │           │   ├── handlers
 │           │   │   └── main.yml
 │           │   ├── meta
 │           │   │   └── main.yml
 │           │   ├── tasks
 │           │   │   └── main.yml
-│           │   ├── templates
 │           │   ├── tests
 │           │   │   ├── inventory
 │           │   │   └── test.yml
@@ -223,14 +290,12 @@ sysad2-12021
 │               ├── README.md
 │               ├── defaults
 │               │   └── main.yml
-│               ├── files
 │               ├── handlers
 │               │   └── main.yml
 │               ├── meta
 │               │   └── main.yml
 │               ├── tasks
 │               │   └── main.yml
-│               ├── templates
 │               ├── tests
 │               │   ├── inventory
 │               │   └── test.yml
