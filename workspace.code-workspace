@@ -1,9 +1,7 @@
 {
-	"folders": [
-		{
-			"name": "ejvillareal-tip.github.io",
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }
